@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTech - Thế Giới Công Nghệ Đỉnh Cao</title>
+    
+    <!-- Animate.css CDN (Hiệu ứng CSS động) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Orbitron & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER SECTION (Semantic HTML5) -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="#" class="logo-link animate__animated animate__pulse animate__infinite">
+                <i class="fa-solid fa-microchip logo-icon"></i>
+                <span class="logo-text">CYBER<span class="highlight">TECH</span></span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle (Pure CSS Checkbox Hack) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="hamburger-btn" aria-label="Mở menu">
+                <i class="fa-solid fa-bars icon-open"></i>
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </label>
+
+            <!-- Navigation Bar -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Trang chủ</a></li>
+                    <li class="nav-item"><a href="#categories" class="nav-link">Danh mục</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Sản phẩm Hot</a></li>
+                    <li class="nav-item"><a href="#deals" class="nav-link">Khuyến mãi</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar & Cart Actions -->
+            <div class="header-actions">
+                <form class="search-form" role="search" action="#" method="GET">
+                    <input type="search" placeholder="Tìm kiếm đồ công nghệ..." class="search-input" aria-label="Tìm kiếm">
+                    <button type="submit" class="search-btn" aria-label="Nút tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                
+                <a href="#products" class="icon-btn cart-btn" aria-label="Giỏ hàng">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. MAIN CONTENT AREA (Semantic HTML5) -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content animate-on-scroll">
+                <span class="hero-tagline animate__animated animate__fadeInDown">Siêu Phẩm Công Nghệ 2026</span>
+                <h1 class="hero-title animate__animated animate__zoomIn">Kỷ Nguyên Mới Của <br><span class="gradient-text">Gaming & AI Devices</span></h1>
+                <p class="hero-description animate__animated animate__fadeInUp">Trải nghiệm sức mạnh xử lý vượt giới hạn với dàn Laptop AI, Gear Cyberpunk cao cấp và phụ kiện công nghệ độc quyền chỉ có tại CyberTech.</p>
+                
+                <div class="hero-cta-group">
+                    <a href="#products" class="btn btn-primary animate__animated animate__fadeInLeft">
+                        Khám Phá Ngay <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#deals" class="btn btn-outline animate__animated animate__fadeInRight">
+                        Săn Sốc Deal 🔥
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper animate-on-scroll">
+                <div class="glow-backdrop"></div>
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=800&q=80" alt="High-end Gaming Laptop CyberTech" class="hero-img">
+            </div>
+        </section>
+
+        <!-- Product Categories Section -->
+        <section id="categories" class="categories-section">
+            <div class="section-title-wrapper animate-on-scroll">
+                <h2 class="section-title">Danh Mục Nổi Bật</h2>
+                <p class="section-subtitle">Lựa chọn thiết bị đỉnh cao theo nhu cầu sử dụng</p>
+            </div>
+
+            <div class="category-grid">
+                <!-- Category 1 -->
+                <article class="category-card animate-on-scroll">
+                    <div class="cat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3 class="cat-name">AI Laptop & Ultrabook</h3>
+                    <p class="cat-count">120+ Sản phẩm</p>
+                </article>
+
+                <!-- Category 2 -->
+                <article class="category-card animate-on-scroll">
+                    <div class="cat-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="cat-name">Tai Nghe Hi-Res</h3>
+                    <p class="cat-count">85+ Sản phẩm</p>
+                </article>
+
+                <!-- Category 3 -->
+                <article class="category-card animate-on-scroll">
+                    <div class="cat-icon"><i class="fa-solid fa-keyboard"></i></div>
+                    <h3 class="cat-name">Bàn Phím Cơ Custom</h3>
+                    <p class="cat-count">150+ Sản phẩm</p>
+                </article>
+
+                <!-- Category 4 -->
+                <article class="category-card animate-on-scroll">
+                    <div class="cat-icon"><i class="fa-solid fa-display"></i></div>
+                    <h3 class="cat-name">Màn Hình OLED 240Hz</h3>
+                    <p class="cat-count">45+ Sản phẩm</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="products-section">
+            <div class="section-title-wrapper animate-on-scroll">
+                <h2 class="section-title">Sản Phẩm Bán Chạy</h2>
+                <p class="section-subtitle">Được cộng đồng Tech-Geek đánh giá cao nhất</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card animate-on-scroll">
+                    <div class="product-badge">HOT</div>
+                    <div class="product-img-holder">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80" alt="CyberBook Pro AI 2026">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Laptop AI</span>
+                        <h3 class="product-title">CyberBook Pro Ultra 16 AI</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(48 đánh giá)</span>
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="current-price">45.990.000₫</span>
+                                <span class="old-price">49.990.000₫</span>
+                            </div>
+                            <button type="button" class="add-cart-btn" aria-label="Thêm CyberBook Pro vào giỏ">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card animate-on-scroll">
+                    <div class="product-badge sale">-15%</div>
+                    <div class="product-img-holder">
+                        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80" alt="Tai nghe CyberSound ANC">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Audio Hi-Fi</span>
+                        <h3 class="product-title">CyberSound Wireless ANC X1</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>(32 đánh giá)</span>
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="current-price">6.790.000₫</span>
+                                <span class="old-price">7.990.000₫</span>
+                            </div>
+                            <button type="button" class="add-cart-btn" aria-label="Thêm Tai nghe CyberSound vào giỏ">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card animate-on-scroll">
+                    <div class="product-img-holder">
+                        <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=600&q=80" alt="Bàn phím cơ CyberKey RGB">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Bàn Phím Cơ</span>
+                        <h3 class="product-title">CyberKey Keychron Optical Pro</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(95 đánh giá)</span>
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="current-price">3.250.000₫</span>
+                            </div>
+                            <button type="button" class="add-cart-btn" aria-label="Thêm Bàn phím vào giỏ">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card animate-on-scroll">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-img-holder">
+                        <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80" alt="Chuột Gaming CyberMouse 8K">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Gaming Gear</span>
+                        <h3 class="product-title">CyberMouse Master 8K Polling</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(19 đánh giá)</span>
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-price">
+                                <span class="current-price">2.490.000₫</span>
+                            </div>
+                            <button type="button" class="add-cart-btn" aria-label="Thêm Chuột Gaming vào giỏ">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Special Hot Deals Section -->
+        <section id="deals" class="deals-section">
+            <div class="deals-banner animate-on-scroll">
+                <div class="deals-content">
+                    <span class="deals-badge">GIỜ VÀNG GIÁ SỐC</span>
+                    <h2>Cyber Weekend Special Sales</h2>
+                    <p>Giảm ngay đến 40% cho gói nâng cấp dàn PC Gaming & Gear trọn bộ. Áp dụng đến hết tuần này!</p>
+                    <a href="#products" class="btn btn-primary">Nhận Mã Giảm Giá <i class="fa-solid fa-ticket"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscriptions -->
+        <section class="newsletter-section animate-on-scroll">
+            <div class="newsletter-card">
+                <h3>Đăng Ký Nhận Thông Tin Công Nghệ</h3>
+                <p>Nhận ngay Voucher 500k cho đơn hàng đầu tiên và cập nhật tin tức CyberTech sớm nhất.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Nhập email của bạn..." required aria-label="Email">
+                    <button type="submit" class="btn btn-primary">Đăng ký ngay</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 3. FOOTER SECTION (Semantic HTML5) -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: About -->
+            <div class="footer-col brand-col">
+                <a href="#" class="logo-link">
+                    <i class="fa-solid fa-microchip logo-icon"></i>
+                    <span class="logo-text">CYBER<span class="highlight">TECH</span></span>
+                </a>
+                <p class="footer-desc">
+                    Hệ thống bán lẻ đồ công nghệ, gaming gear và laptop AI cao cấp hàng đầu Việt Nam. Chất lượng vượt trội - Dịch vụ đẳng cấp.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Liên Kết Nhanh</h4>
+                <ul class="footer-menu">
+                    <li><a href="#hero">Trang chủ</a></li>
+                    <li><a href="#categories">Danh mục sản phẩm</a></li>
+                    <li><a href="#products">Sản phẩm khuyến mãi</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Support -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Hỗ Trợ Khách Hàng</h4>
+                <ul class="footer-menu">
+                    <li><a href="#">Hướng dẫn mua hàng online</a></li>
+                    <li><a href="#">Chính sách đổi trả 1:1</a></li>
+                    <li><a href="#">Trả góp 0% qua thẻ</a></li>
+                    <li><a href="#">Tra cứu đơn hàng</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Contact Info -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Thông Tin Liên Hệ</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Đường Công Nghệ, Quận 1, TP. Hồ Chí Minh</li>
+                    <li><i class="fa-solid fa-phone"></i> Hotline: 1900 888 999</li>
+                    <li><i class="fa-solid fa-envelope"></i> Email: support@cybertech.vn</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 CyberTech Store. All Rights Reserved. Pure HTML5 & CSS3 Design.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
